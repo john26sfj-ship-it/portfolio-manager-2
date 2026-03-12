@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import { resolve } from "node:path";
 
 export default defineConfig({
+  base: "/portfolio-manager-2/",
   build: {
     rollupOptions: {
       input: {
