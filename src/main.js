@@ -10,14 +10,18 @@ const cardEl = document.getElementById("card");
 */
 window.onload = function () {
   setInterval(() => {
-    let backColor = getRandomColor();
-    let tryCardColor = getRandomColor();
-    backgroundEl.style.backgroundColor = backColor;
-
-    if (tryCardColor == backColor) {
-      tryCardColor = getRandomColor();
-    } else {
-      cardEl.style.backgroundColor = tryCardColor;
-    }
-  }, 4100);
+    backgroundEl.style.backgroundColor = getRandomColor([
+      "#bbb791",
+      "#a8a583",
+      "#969274",
+      "#8c896d",
+      "#706e57",
+    ]);
+    cardEl.style.backgroundColor = getRandomColor([
+      "#d6b588",
+      "#c1a37a",
+      "#ab916d",
+      "#a18866",
+    ]);
+  }, 3100);
 };
