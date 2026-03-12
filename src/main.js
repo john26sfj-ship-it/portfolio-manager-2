@@ -1,6 +1,7 @@
 import { getRandomColor } from "./components/getRandomColor";
 
 const backgroundEl = document.getElementById("root");
+const cardEl = document.getElementById("card");
 
 /* Makes sure the page is loaded,
   then sets background-color
@@ -9,6 +10,14 @@ const backgroundEl = document.getElementById("root");
 */
 window.onload = function () {
   setInterval(() => {
-    backgroundEl.style.backgroundColor = getRandomColor();
+    let backColor = getRandomColor();
+    let tryCardColor = getRandomColor();
+    backgroundEl.style.backgroundColor = backColor;
+
+    if (tryCardColor == backColor) {
+      tryCardColor = getRandomColor();
+    } else {
+      cardEl.style.backgroundColor = tryCardColor;
+    }
   }, 4100);
 };

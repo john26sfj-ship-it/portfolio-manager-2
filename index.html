@@ -10,19 +10,22 @@
   <body>
     <div id="root">
       <div class="card">
-        <h3>To contain:</h3>
-        <ul>
-          <li>john-avatar.jpg, left side</li>
-          <li>Personalia section, right top</li>
-          <li>My learning journey section, right middle</li>
-          <li>Portfolio section, right bottom</li>
-        </ul>
-        <h3>Plan:</h3>
-        <ol>
-          <li>Slideout separate card from behind card on section click.</li>
-          <li>Possible rotate animation on slideout?</li>
-          <li>Link to projects in portfolio slideout.</li>
-        </ol>
+        <img
+          src="./src/images/john-avatar.jpg"
+          alt="Portrait of John."
+          class="portrait"
+        />
+        <div class="section-container">
+          <section id="personalia-section" class="each-section">
+            <h2>View personalia.</h2>
+          </section>
+          <section id="journey-section" class="each-section">
+            <h2>View my journey.</h2>
+          </section>
+          <section id="portfolio-section" class="each-section">
+            <h2>View my projects.</h2>
+          </section>
+        </div>
       </div>
     </div>
   </body>

@@ -29,8 +29,7 @@ body {
   position: relative;
   z-index: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -46,4 +45,38 @@ body {
 
 h3 {
   margin: 0.5rem;
+}
+
+.portrait {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+
+.section-container {
+  width: 15rem;
+  height: 15.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.each-section {
+  width: 15rem;
+  height: 4.5rem;
+  background-color: rgb(125, 125, 125, 0.08);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #405d5d; /*#2a4242;*/
+}
+
+#personalia-section {
+}
+
+#journey-section {
+}
+
+#portfolio-section {
 }
